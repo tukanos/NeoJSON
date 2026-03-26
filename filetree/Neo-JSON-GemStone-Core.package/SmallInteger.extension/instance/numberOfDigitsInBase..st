@@ -5,4 +5,4 @@ numberOfDigitsInBase: b
 
 	b = 10 ifFalse: [^super numberOfDigitsInBase: b].
 	self < 0 ifTrue: [^self negated numberOfDigitsInBase: b].
-	^self decimalDigitLength
+	^ self decimalDigitLength
